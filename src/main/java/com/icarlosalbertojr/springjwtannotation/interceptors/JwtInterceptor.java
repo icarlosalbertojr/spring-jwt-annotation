@@ -22,10 +22,7 @@ public class JwtInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if (!isCheckJWT(handler)) {
-            return true;
-        }
-        return checkJWT(request);
+        return !isCheckJWT(handler) ? true : checkJWT(request);
     }
 
     private boolean isCheckJWT(Object handler) {
