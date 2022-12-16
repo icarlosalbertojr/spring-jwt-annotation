@@ -3,7 +3,6 @@ package com.icarlosalbertojr.springjwtannotation.controllers;
 import com.icarlosalbertojr.springjwtannotation.annotations.UncheckJwt;
 import com.icarlosalbertojr.springjwtannotation.services.AuthService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

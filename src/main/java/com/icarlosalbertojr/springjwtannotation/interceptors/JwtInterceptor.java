@@ -2,15 +2,9 @@ package com.icarlosalbertojr.springjwtannotation.interceptors;
 
 import com.icarlosalbertojr.springjwtannotation.annotations.UncheckJwt;
 import com.icarlosalbertojr.springjwtannotation.services.AuthService;
-import io.jsonwebtoken.Jwts;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
